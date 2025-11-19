@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interactif - jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="quiz-style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧠 Quiz Interactif</h1>
+            <p>Répondez aux questions ci-dessous</p>
+        </header>
+
+        <div id="quiz-container">
+            <!-- Les questions seront générées dynamiquement -->
+        </div>
+
+        <div class="controls">
+            <button id="submit-quiz" class="btn-primary">📝 Soumettre le Quiz</button>
+            <button id="reset-quiz" class="btn-secondary">🔄 Recommencer</button>
+        </div>
+
+        <div id="results" class="results-section" style="display: none;">
+            <h2>📊 Résultats</h2>
+            <div id="total-score"></div>
+            <div id="topic-scores"></div>
+            <div id="detailed-results"></div>
+        </div>
+    </div>
+
+    <script src="quiz-script.js"></script>
+</body>
+</html>
